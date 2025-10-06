@@ -34,7 +34,7 @@ module CapybaraExtractor
       modulee = page.find("h1").text
 
       if modulee == "Firmware"
-        puts "\n!!! Skipping firmware" 
+        puts "\n!!! Skipping firmware" # TODO: stop skipping firmware
         return
       end
 
