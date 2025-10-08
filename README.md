@@ -5,6 +5,4 @@ an auto-generated python wrapper for the OPNsense API.
 
 
 ## Acknowledgements
-The basic client structure was taken from https://github.com/mtreinish/pyopnsense
-
-Thank you Matthew Treinish for creating the basis of this project!
+The basic client structure was taken from https://github.com/mtreinish/pyopnsense. Thank you Matthew Treinish for creating the basis of this project!

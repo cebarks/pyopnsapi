@@ -34,7 +34,7 @@ module CapybaraExtractor
       modulee = page.find("h1").text
 
       if modulee == "Firmware"
-        puts "\n!!! Skipping firmware" # TODO: stop skipping firmware
+        puts "\n!!! Skipping firmware" # TODO: stop skipping firmware https://docs.opnsense.org/development/api/core/firmware.html
         return
       end
 
@@ -46,7 +46,13 @@ module CapybaraExtractor
         controller = table.find("caption").text.scan(/\(([^>]*)\)/).flatten.first.split("Controller")[0]
         rows = table.all("tr")[1..]
 
-        clazzes << format_class(rows, controller, modulee)
+        model_link = begin
+          table.find("a")[:href]
+        rescue Capybara::ElementNotFound
+          nil
+        end
+
+        clazzes << format_class(rows, controller, modulee, model_link)
       end
 
       filename = "#{modulee.downcase}.py"
@@ -83,16 +89,11 @@ module CapybaraExtractor
       output.join("\n")
     end
 
-    def format_class(table, controller, modulee)
+    def format_class(table, controller, modulee, model_link=nil)
       functions = table.map do |row|
         split = row.text.split("\n")
         next if split.length == 0
-
-        if split[0] == "<<uses>>"
-          # TODO: link to the xml model if used by a controller
-          puts "MODEL: #{split[1]}"
-          next
-        end
+        next if split[0] == "<<uses>>"
 
         if split.length == 4
           format_function(split)
@@ -104,10 +105,12 @@ module CapybaraExtractor
 
       functions.compact!
 
+      model_link_formatted = "\n    Model Schema: #{model_link}\n"
+
       <<-END
 class #{controller}Client(client.OPNClient):
     """A client for interacting with the #{modulee}/#{controller} endpoint.
-
+#{model_link_formatted unless model_link.nil?}
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
