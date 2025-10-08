@@ -7,6 +7,8 @@ from pyopnsapi import client
 class CaClient(client.OPNClient):
     """A client for interacting with the Trust/Ca endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Trust/Ca.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -28,6 +30,8 @@ class CaClient(client.OPNClient):
 
 class CertClient(client.OPNClient):
     """A client for interacting with the Trust/Cert endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Trust/Cert.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
@@ -66,6 +70,8 @@ class CrlClient(client.OPNClient):
 
 class SettingsClient(client.OPNClient):
     """A client for interacting with the Trust/Settings endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Trust/General.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests

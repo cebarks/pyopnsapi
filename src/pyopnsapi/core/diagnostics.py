@@ -49,6 +49,8 @@ class DnsClient(client.OPNClient):
 class DnsDiagnosticsClient(client.OPNClient):
     """A client for interacting with the Diagnostics/DnsDiagnostics endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/DnsDiagnostics.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -169,6 +171,8 @@ class InterfaceClient(client.OPNClient):
 class LvtemplateClient(client.OPNClient):
     """A client for interacting with the Diagnostics/Lvtemplate endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/Lvtemplate.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -244,6 +248,8 @@ class NetworkinsightClient(client.OPNClient):
 class PacketCaptureClient(client.OPNClient):
     """A client for interacting with the Diagnostics/PacketCapture endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/PacketCapture.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -263,6 +269,8 @@ class PacketCaptureClient(client.OPNClient):
 class PingClient(client.OPNClient):
     """A client for interacting with the Diagnostics/Ping endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/Ping.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -281,6 +289,8 @@ class PingClient(client.OPNClient):
 
 class PortprobeClient(client.OPNClient):
     """A client for interacting with the Diagnostics/Portprobe endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/Portprobe.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
@@ -347,6 +357,8 @@ class SystemhealthClient(client.OPNClient):
 
 class TracerouteClient(client.OPNClient):
     """A client for interacting with the Diagnostics/Traceroute endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/Traceroute.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests

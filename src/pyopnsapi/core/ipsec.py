@@ -7,6 +7,8 @@ from pyopnsapi import client
 class ConnectionsClient(client.OPNClient):
     """A client for interacting with the Ipsec/Connections endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/Swanctl.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -65,6 +67,8 @@ class ConnectionsClient(client.OPNClient):
 class KeyPairsClient(client.OPNClient):
     """A client for interacting with the Ipsec/KeyPairs endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/IPsec.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -122,6 +126,8 @@ class LegacySubsystemClient(client.OPNClient):
 class ManualSpdClient(client.OPNClient):
     """A client for interacting with the Ipsec/ManualSpd endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/Swanctl.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -141,6 +147,8 @@ class ManualSpdClient(client.OPNClient):
 class PoolsClient(client.OPNClient):
     """A client for interacting with the Ipsec/Pools endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/Swanctl.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -159,6 +167,8 @@ class PoolsClient(client.OPNClient):
 
 class PreSharedKeysClient(client.OPNClient):
     """A client for interacting with the Ipsec/PreSharedKeys endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/IPsec.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
@@ -239,6 +249,8 @@ class SessionsClient(client.OPNClient):
 class SettingsClient(client.OPNClient):
     """A client for interacting with the Ipsec/Settings endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/IPsec.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -283,6 +295,8 @@ class TunnelClient(client.OPNClient):
 
 class VtiClient(client.OPNClient):
     """A client for interacting with the Ipsec/Vti endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/Swanctl.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests

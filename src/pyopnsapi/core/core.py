@@ -45,6 +45,8 @@ class DashboardClient(client.OPNClient):
 class HasyncClient(client.OPNClient):
     """A client for interacting with the Core/Hasync endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Core/Hasync.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -79,6 +81,8 @@ class HasyncStatusClient(client.OPNClient):
 
 class InitialSetupClient(client.OPNClient):
     """A client for interacting with the Core/InitialSetup endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Core/InitialSetup.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
@@ -168,6 +172,8 @@ class SystemClient(client.OPNClient):
 
 class TunablesClient(client.OPNClient):
     """A client for interacting with the Core/Tunables endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Core/Tunables.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests

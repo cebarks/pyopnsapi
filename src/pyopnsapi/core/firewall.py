@@ -7,6 +7,8 @@ from pyopnsapi import client
 class AliasClient(client.OPNClient):
     """A client for interacting with the Firewall/Alias endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Firewall/Alias.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -81,6 +83,8 @@ class AliasUtilClient(client.OPNClient):
 class CategoryClient(client.OPNClient):
     """A client for interacting with the Firewall/Category endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Firewall/Category.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -99,6 +103,8 @@ class CategoryClient(client.OPNClient):
 
 class FilterBaseClient(client.OPNClient):
     """A client for interacting with the Firewall/FilterBase endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Firewall/Filter.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
@@ -159,6 +165,8 @@ class FilterUtilClient(client.OPNClient):
 
 class GroupClient(client.OPNClient):
     """A client for interacting with the Firewall/Group endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Firewall/Group.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests

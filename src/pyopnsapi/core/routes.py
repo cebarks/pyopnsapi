@@ -20,6 +20,8 @@ class GatewayClient(client.OPNClient):
 class RoutesClient(client.OPNClient):
     """A client for interacting with the Routes/Routes endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Routes/Route.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment

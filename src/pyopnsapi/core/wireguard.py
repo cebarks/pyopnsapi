@@ -7,6 +7,8 @@ from pyopnsapi import client
 class ClientClient(client.OPNClient):
     """A client for interacting with the Wireguard/Client endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Wireguard/Client.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -44,6 +46,8 @@ class ClientClient(client.OPNClient):
 class GeneralClient(client.OPNClient):
     """A client for interacting with the Wireguard/General endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Wireguard/General.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -59,6 +63,8 @@ class GeneralClient(client.OPNClient):
 
 class ServerClient(client.OPNClient):
     """A client for interacting with the Wireguard/Server endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Wireguard/Server.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests

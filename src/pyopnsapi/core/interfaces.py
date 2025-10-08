@@ -7,6 +7,8 @@ from pyopnsapi import client
 class BridgeSettingsClient(client.OPNClient):
     """A client for interacting with the Interfaces/BridgeSettings endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/Bridge.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -34,6 +36,8 @@ class BridgeSettingsClient(client.OPNClient):
 
 class GifSettingsClient(client.OPNClient):
     """A client for interacting with the Interfaces/GifSettings endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/Gif.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
@@ -66,6 +70,8 @@ class GifSettingsClient(client.OPNClient):
 class GreSettingsClient(client.OPNClient):
     """A client for interacting with the Interfaces/GreSettings endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/Gre.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -97,6 +103,8 @@ class GreSettingsClient(client.OPNClient):
 class LaggSettingsClient(client.OPNClient):
     """A client for interacting with the Interfaces/LaggSettings endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/Lagg.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -125,6 +133,8 @@ class LaggSettingsClient(client.OPNClient):
 class LoopbackSettingsClient(client.OPNClient):
     """A client for interacting with the Interfaces/LoopbackSettings endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/Loopback.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -152,6 +162,8 @@ class LoopbackSettingsClient(client.OPNClient):
 
 class NeighborSettingsClient(client.OPNClient):
     """A client for interacting with the Interfaces/NeighborSettings endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/Neighbor.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
@@ -194,6 +206,8 @@ class OverviewClient(client.OPNClient):
 class VipSettingsClient(client.OPNClient):
     """A client for interacting with the Interfaces/VipSettings endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/Vip.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -225,6 +239,8 @@ class VipSettingsClient(client.OPNClient):
 class VlanSettingsClient(client.OPNClient):
     """A client for interacting with the Interfaces/VlanSettings endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/Vlan.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -252,6 +268,8 @@ class VlanSettingsClient(client.OPNClient):
 
 class VxlanSettingsClient(client.OPNClient):
     """A client for interacting with the Interfaces/VxlanSettings endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/VxLan.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests

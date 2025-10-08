@@ -7,6 +7,8 @@ from pyopnsapi import client
 class GroupClient(client.OPNClient):
     """A client for interacting with the Auth/Group endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Auth/Group.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -26,6 +28,8 @@ class GroupClient(client.OPNClient):
 class PrivClient(client.OPNClient):
     """A client for interacting with the Auth/Priv endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Auth/Priv.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -44,6 +48,8 @@ class PrivClient(client.OPNClient):
 
 class UserClient(client.OPNClient):
     """A client for interacting with the Auth/User endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Auth/User.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests

@@ -7,6 +7,8 @@ from pyopnsapi import client
 class CtrlAgentClient(client.OPNClient):
     """A client for interacting with the Kea/CtrlAgent endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Kea/KeaCtrlAgent.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -22,6 +24,8 @@ class CtrlAgentClient(client.OPNClient):
 
 class Dhcpv4Client(client.OPNClient):
     """A client for interacting with the Kea/Dhcpv4 endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Kea/KeaDhcpv4.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
@@ -71,6 +75,8 @@ class Dhcpv4Client(client.OPNClient):
 
 class Dhcpv6Client(client.OPNClient):
     """A client for interacting with the Kea/Dhcpv6 endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Kea/KeaDhcpv6.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests

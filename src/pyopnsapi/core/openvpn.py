@@ -7,6 +7,8 @@ from pyopnsapi import client
 class ClientOverwritesClient(client.OPNClient):
     """A client for interacting with the Openvpn/ClientOverwrites endpoint.
 
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/OpenVPN/OpenVPN.xml
+
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
     :param str base_url: The base API endpoint for the OPNsense deployment
@@ -41,6 +43,8 @@ class ExportClient(client.OPNClient):
 
 class InstancesClient(client.OPNClient):
     """A client for interacting with the Openvpn/Instances endpoint.
+
+    Model Schema: https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/OpenVPN/OpenVPN.xml
 
     :param str api_key: The API key to use for requests
     :param str api_secret: The API secret to use for requests
